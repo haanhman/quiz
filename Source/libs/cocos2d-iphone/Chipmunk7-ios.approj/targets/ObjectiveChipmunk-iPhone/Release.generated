@@ -1,7 +1,7 @@
 {
     "assets": [
         {
-            "asset": "../../../../tmp/tmp3rO6uy/TARGET_BUILD_DIR/libObjectiveChipmunk-iPhone.a", 
+            "asset": "../../../../tmp/tmpjO2MRm/TARGET_BUILD_DIR/libObjectiveChipmunk-iPhone.a", 
             "target": "../../../../Users/anhmantk/ios/quiz.spritebuilder/normal"
         }
     ], 
@@ -239,7 +239,7 @@
             "type": "iquote"
         }, 
         {
-            "header_path": "/tmp/tmp3rO6uy/BUILT_PRODUCTS_DIR/include", 
+            "header_path": "/tmp/tmpjO2MRm/BUILT_PRODUCTS_DIR/include", 
             "type": "I"
         }, 
         {
@@ -251,11 +251,11 @@
             "type": "I"
         }, 
         {
-            "header_path": "/tmp/tmp3rO6uy/DERIVED_FILE_DIR/armv7", 
+            "header_path": "/tmp/tmpjO2MRm/DERIVED_FILE_DIR/armv7", 
             "type": "I"
         }, 
         {
-            "header_path": "/tmp/tmp3rO6uy/DERIVED_FILE_DIR", 
+            "header_path": "/tmp/tmpjO2MRm/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 

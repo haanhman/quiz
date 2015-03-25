@@ -25,12 +25,16 @@
 #define df_app_name @"English vocabulary quiz"
 
 #define AppId 38
-#define NOTAMAZON 1
+#define NOTAMAZON 0
 
 //admob
 //#warning nho thay doi id quang cao
 #define df_idFulScreen @"ca-app-pub-5765744429336993/2452539266"
-#define df_idQuangCao @"ca-app-pub-5765744429336993/3400038866"
+#if ANDROID
+#define df_idQuangCao @"ca-app-pub-5253078296717317/1727967586"
+#else
+#define df_idQuangCao @"ca-app-pub-5253078296717317/4681433985"
+#endif
 
 //chartboots
 #if ANDROID

@@ -15,7 +15,7 @@
         // "APPLICATION_NAME": "",
         
         // The name of the application to display in the launcher
-        "APPLICATION_FULL_NAME": "English vocabulary quiz",
+        "APPLICATION_FULL_NAME": "Vocabulary quiz",
         
         // The unique identifier for the application.
         // Normally this is in reverse DNS notation, e.g.,
@@ -81,7 +81,7 @@
         // Usually something like "./Icon.png".
         
         //"NOTIFICATION_ICON":"/Volumes/NewSSD1/AnhHoang/MonkeyJunior/Edu.spritebuilder/Source/Resources/ab_ic_duo_black.png",
-        //"ICON": "./icon/android/144_android.png",
+        "ICON": "./icon/android/144_android.png",
         //"NOTIFICATION_ICON":"./icon/android/48_android_push.png",
         
         // A regular expression to determine which assets

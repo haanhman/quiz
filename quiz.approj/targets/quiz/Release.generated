@@ -1,6 +1,10 @@
 {
     "assets": [
         {
+            "asset": "icon/ios/512x512", 
+            "target": "512x512"
+        }, 
+        {
             "asset": "Source/Resources/Icons/Settings.png", 
             "target": "Settings.png"
         }, 
@@ -13,8 +17,16 @@
             "target": "configuration.json"
         }, 
         {
+            "asset": "icon/ios/144x144.png", 
+            "target": "144x144.png"
+        }, 
+        {
             "asset": "Source/Resources/Default~ipad.png", 
             "target": "Default~ipad.png"
+        }, 
+        {
+            "asset": "icon/ios/58x58.png", 
+            "target": "58x58.png"
         }, 
         {
             "asset": "Source/Resources/Icons/iPad@2x.png", 
@@ -29,8 +41,24 @@
             "target": "dung.mp3"
         }, 
         {
+            "asset": "icon/ios/1024x1024", 
+            "target": "1024x1024"
+        }, 
+        {
+            "asset": "icon/ios/72x72.png", 
+            "target": "72x72.png"
+        }, 
+        {
+            "asset": "icon/ios/50x50.png", 
+            "target": "50x50.png"
+        }, 
+        {
             "asset": "Source/Resources/Icons/iPad.png", 
             "target": "iPad.png"
+        }, 
+        {
+            "asset": "icon/ios/120x120.png", 
+            "target": "120x120.png"
         }, 
         {
             "asset": "java/AndroidManifest.xml", 
@@ -41,12 +69,24 @@
             "target": "iPad-old@2x.png"
         }, 
         {
+            "asset": "icon/ios/57x57.png", 
+            "target": "57x57.png"
+        }, 
+        {
             "asset": "Source/Resources/Icons/iPhone-old@2x.png", 
             "target": "iPhone-old@2x.png"
         }, 
         {
             "asset": "click_ingame.mp3", 
             "target": "click_ingame.mp3"
+        }, 
+        {
+            "asset": "install/install_android.zip", 
+            "target": "install_android.zip"
+        }, 
+        {
+            "asset": "icon/ios/114x114.png", 
+            "target": "114x114.png"
         }, 
         {
             "asset": "Source/Resources/Published-iOS", 
@@ -57,16 +97,20 @@
             "target": "Settings@2x.png"
         }, 
         {
-            "asset": "install/install_android.zip", 
-            "target": "install_android.zip"
-        }, 
-        {
             "asset": "time_out.mp3", 
             "target": "time_out.mp3"
         }, 
         {
             "asset": "install/group.plist", 
             "target": "group.plist"
+        }, 
+        {
+            "asset": "icon/ios/76x76.png", 
+            "target": "76x76.png"
+        }, 
+        {
+            "asset": "icon/ios/152x152.png", 
+            "target": "152x152.png"
         }, 
         {
             "asset": "click_touch.mp3", 
@@ -97,6 +141,14 @@
             "target": "lose_time.mp3"
         }, 
         {
+            "asset": "icon/ios/80x80.png", 
+            "target": "80x80.png"
+        }, 
+        {
+            "asset": "icon/ios/40x40.png", 
+            "target": "40x40.png"
+        }, 
+        {
             "asset": "Source/Resources/Icons/iPhone-old.png", 
             "target": "iPhone-old.png"
         }, 
@@ -113,8 +165,16 @@
             "target": "iPhone.png"
         }, 
         {
+            "asset": "icon/ios/29x29.png", 
+            "target": "29x29.png"
+        }, 
+        {
             "asset": "Source/Resources/Default-568h@2x.png", 
             "target": "Default-568h@2x.png"
+        }, 
+        {
+            "asset": "icon/ios/100x100.png", 
+            "target": "100x100.png"
         }, 
         {
             "asset": "Source/Resources/Icons/iPhone@2x.png", 
@@ -414,7 +474,7 @@
             "type": "iquote"
         }, 
         {
-            "header_path": "/tmp/tmp3rO6uy/BUILT_PRODUCTS_DIR/include", 
+            "header_path": "/tmp/tmpjO2MRm/BUILT_PRODUCTS_DIR/include", 
             "type": "I"
         }, 
         {
@@ -482,11 +542,11 @@
             "type": "I"
         }, 
         {
-            "header_path": "/tmp/tmp3rO6uy/DERIVED_FILE_DIR/armv7", 
+            "header_path": "/tmp/tmpjO2MRm/DERIVED_FILE_DIR/armv7", 
             "type": "I"
         }, 
         {
-            "header_path": "/tmp/tmp3rO6uy/DERIVED_FILE_DIR", 
+            "header_path": "/tmp/tmpjO2MRm/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 

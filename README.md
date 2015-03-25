@@ -14,17 +14,3 @@ sudo BUILD=release apportable build
 sudo BUILD=release BUILD_TIMESTAMP=1416221274 apportable build
 
 apportable log | grep quiz
-
-
-
--- phan con lai
-ok - đưa min max vào phân play
-ok - download ngầm
-ok - tích hợp quảng cáo
-- chỉnh lại các link rate app, ... trước khi publish
-- trong phần setting có 2 phần gửi mail khác nhau (anh Hoàng cung cấp text)
-
-
-
-
-Permission Denial: opening provider com.google.android.gsf.gservices.GservicesProvider from ProcessRecord{43033a30 4461:com.earlystart.android.quiz/u0a533} (pid=4461, uid=10533) requires com.google.android.providers.gsf.permission.READ_GSERVICES or com.google.android.providers.gsf.permission.WRITE_GSERVICES

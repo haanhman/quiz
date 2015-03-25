@@ -55,7 +55,7 @@
     
     listCard = [NSMutableArray array];
     list_data = [appcontroller shuffleArray:[UserInfo getInstance].listCard];
-    NSLog(@"list_data: %@", list_data);
+    //NSLog(@"list_data: %@", list_data);
     content_node.contentSize = CGSizeMake(1, content_height/100);
     content_node.opacity = 0;
     int total_card = list_data.count;
@@ -152,6 +152,7 @@
     }
     
     [self updateTime];
+    NSLog(@"total_second: %f", total_second);
 }
 
 -(void)disableAllItem {
@@ -358,6 +359,7 @@
     lbl_card_name = nil;
     tim = nil;
     [timer invalidate];
+    timer = nil;
     progress = nil;
     [time_out stop];
     [listCard removeAllObjects];
