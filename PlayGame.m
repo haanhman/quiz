@@ -55,10 +55,11 @@
     
     listCard = [NSMutableArray array];
     list_data = [appcontroller shuffleArray:[UserInfo getInstance].listCard];
+    NSLog(@"list_data: %@", list_data);
     content_node.contentSize = CGSizeMake(1, content_height/100);
     content_node.opacity = 0;
     int total_card = list_data.count;
-    total_second = 2.96f * total_card;
+    total_second = 3.3f * total_card;
     [self updateTime];
     answerDone = 0;
     
@@ -135,6 +136,7 @@
 
 -(void)changeTime {
     if(total_second <= 0) {
+        [self disableAllItem];
         [timer invalidate];
         [UserInfo getInstance].lose_type = 2;
         NSString *ccbi_file = @"ccbi/gameplay/youlose";

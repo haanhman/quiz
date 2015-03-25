@@ -152,16 +152,17 @@
         return;
     }
     if([bt.name isEqualToString:@"mail_us"]) {
-        [appcontroller GoSendMail];
+        [appcontroller GoSendMail:1];
         return;
     }
     
     if([bt.name isEqualToString:@"mail_to"]) {
-        [appcontroller GoSendMail];
+        [appcontroller GoSendMail:2];
         return;
     }
     if([bt.name isEqualToString:@"our_store"]) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:df_urlappstore]];
+        NSString *ccbi_file = @"moreapp/moreapp";
+        [[CCDirector sharedDirector] replaceScene:[CCBReader loadAsScene:ccbi_file] withTransition:[CCTransition transitionFadeWithColor:[CCColor whiteColor] duration:0.4]];
         return;
     }
 }

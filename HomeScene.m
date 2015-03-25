@@ -35,7 +35,7 @@
         NSURL *url = [NSURL URLWithString:df_update_url];
         NSArray *list_group = [NSArray arrayWithContentsOfURL:url];
         if(list_group.count > 0) {
-            NSLog(@"list_group: %@", list_group);
+            //NSLog(@"list_group: %@", list_group);
             [[GroupModel getInstance] insertGroup:list_group];
             [user_default setValue:[NSNumber numberWithInt:unixTime] forKey:@"update_time"];
             [user_default synchronize];

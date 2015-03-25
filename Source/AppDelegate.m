@@ -48,9 +48,9 @@
     float fileSize;
     int download_length;
     NSTimer *timer;
-    BOOL ChartboostReady;
     int ChartboostAction;
     QuangCao *quangcao;
+    NSTimer *chartboost_timer;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -159,28 +159,61 @@
 
 - (CCScene*) startScene
 {
-    ChartboostReady = YES;
     [self performSelector:@selector(downloadContent) withObject:nil afterDelay:5.0f];
     [self detectDeviceType];
     return [CCBReader loadAsScene:@"ccbi/home/HomeScene"];
-    //return [CCBReader loadAsScene:@"MainScene"];
+}
+
+-(NSString*)LoadDeviceID{
+    
+    NSString *strOSName;
+    
+#ifdef ANDROID
+    strOSName=[NSString stringWithFormat:@"OS:%@,CPU:%@,Manufacturer:%@,SystemVersion:%@",
+               @"Android",
+               [UIDevice currentDevice].nativeCPUABI,
+               [UIDevice currentDevice].nativeManufacturer,
+               [UIDevice currentDevice].nativeSystemVersion];
+#else
+    NSString  *devicename=[[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad?@"iPad":@"iPhone|iPod";
+    strOSName=[NSString stringWithFormat:@"OS:iOS,devicename:%@,SystemVersion:%f",devicename,[[UIDevice currentDevice].systemVersion floatValue]];
+#endif
+    return strOSName;
 }
 
 //MARK: send mail
--(void)GoSendMail{
+-(void)GoSendMail:(int)type{
     if ([MFMailComposeViewController canSendMail]) {
         MFMailComposeViewController *mailViewController = [[MFMailComposeViewController alloc] init];
         mailViewController.mailComposeDelegate =(id)self;
+        NSString *subject;
+        if(type == 1) {
+            NSString *deviceType = [self LoadDeviceID];
+            subject = [NSString stringWithFormat:@"Need help with %@ (On: %@)", df_app_name, deviceType];
+        } else {
+            subject = @"Hey, I thought you might like this app that I found";
+        }
+        [mailViewController setSubject:subject];
         
+        NSString *body;
         
-        [mailViewController setSubject:[NSString stringWithFormat:df_app_name]];
+        if(type == 1) {
+            body = @"<html><body>";
+        } else {
+            body = [NSString stringWithFormat:@"<html><body>Hi there,<br /><br />\
+                    Check out this cool app that I found.I though you might like it too.<br />\
+                    Here is the link: <a href=\"%@\">%@</a></body></html>", df_urlrateapp, df_app_name];
+        }
         
-        NSMutableString *emailBody = [[NSMutableString alloc] initWithString:@"<html><body>"];
+        NSMutableString *emailBody = [[NSMutableString alloc] initWithString:body];
         
+        if(type == 1) {
+            NSArray *toRecipients = [NSArray arrayWithObject: @"contact.earlystart@gmail.com"];
+            [mailViewController setToRecipients:toRecipients];
+        } else {
+            
+        }
         
-        
-//        NSArray *toRecipients = [NSArray arrayWithObject: @"support@monkeyjunior.com"];
-//        [mailViewController setToRecipients:toRecipients];
         [mailViewController setMessageBody:emailBody isHTML:YES];
         
         AppController *appct=(AppController*)[[UIApplication sharedApplication] delegate];
@@ -354,53 +387,57 @@
 
 
 -(void)showChartboost: (int)actionID {
-    [Chartboost showInterstitial:CBLocationStartup];
     ChartboostAction = actionID;
-    NSLog(@"Quang cao san sang: %d", ChartboostReady);
+    NSUserDefaults *user_default = [NSUserDefaults standardUserDefaults];
+    BOOL first_click = [user_default boolForKey:@"first_click"];
+    if(first_click) {
+    [Chartboost showInterstitial:CBLocationStartup];
+    chartboost_timer =[NSTimer scheduledTimerWithTimeInterval:2.0f target:self selector:@selector(checkChartboostReady) userInfo:nil repeats:NO];
+    } else {
+        [user_default setValue:@YES forKeyPath:@"first_click"];
+        [user_default synchronize];
+        [self processAction];
+    }
 }
+
+-(void)checkChartboostReady {
+    if(self.ChartboostReady == NO) {
+        //[Chartboost showInterstitial:CBLocationQuit];
+        NSLog(@"===> Chartboost load fail!");
+        [self processAction];
+    }
+}
+
 
 #pragma mark - ChartboostDelegate
 
 - (BOOL)shouldRequestInterstitialsInFirstSession {
-    return YES;
+    return NO;
 }
 
 
 // Called after an interstitial has been displayed on the screen.
 - (void)didDisplayInterstitial:(CBLocation)location {
-    NSLog(@"**** Chartboost Interstitial displayed.");
+    self.ChartboostReady = YES;
+    [chartboost_timer invalidate];
 }
 
 
-// Called after an interstitial has attempted to load from the Chartboost API
-// servers but failed.
-- (void)didFailToLoadInterstitial:(CBLocation)location
-                        withError:(CBLoadError)error {
-    ChartboostReady = NO;
-    [self processAction];
-    NSLog(@"Khong the load quang cao tu chartboots");
-}
+/*
+ * didFailToLoadInterstitial
+ *
+ * This is called when an interstitial has failed to load. The error enum specifies
+ * the reason of the failure
+ */
 
-// Called after a click is registered, but the user is not forwarded to the App Store.
-- (void)didFailToRecordClick:(CBLocation)location
-                   withError:(CBClickError)error {
-    NSLog(@"====> didFailToRecordClick");
-}
-
-// Called after an interstitial has been dismissed.
-- (void)didDismissInterstitial:(CBLocation)location {
-    NSLog(@"====> didDismissInterstitial");
+- (void)didFailToLoadInterstitial:(NSString *)location withError:(CBLoadError)error {
+    self.ChartboostReady = NO;
 }
 
 // Called after an interstitial has been closed.
 - (void)didCloseInterstitial:(CBLocation)location {
     NSLog(@"**** Chartboost Interstitial closed.");
     [self processAction];
-}
-
-// Called after an interstitial has been clicked.
-- (void)didClickInterstitial:(CBLocation)location {
-    NSLog(@"====> didClickInterstitial");
 }
 
 -(void)processAction {

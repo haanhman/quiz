@@ -9,12 +9,12 @@
             "target": "Default@2x.png"
         }, 
         {
-            "asset": "install/install_ios.zip", 
-            "target": "install_ios.zip"
-        }, 
-        {
             "asset": "quiz.approj/configuration.json", 
             "target": "configuration.json"
+        }, 
+        {
+            "asset": "Source/Resources/Default~ipad.png", 
+            "target": "Default~ipad.png"
         }, 
         {
             "asset": "Source/Resources/Icons/iPad@2x.png", 
@@ -37,10 +37,6 @@
             "target": "AndroidManifest.xml"
         }, 
         {
-            "asset": "install/install_android.zip", 
-            "target": "install_android.zip"
-        }, 
-        {
             "asset": "Source/Resources/Icons/iPad-old@2x.png", 
             "target": "iPad-old@2x.png"
         }, 
@@ -61,8 +57,16 @@
             "target": "Settings@2x.png"
         }, 
         {
+            "asset": "install/install_android.zip", 
+            "target": "install_android.zip"
+        }, 
+        {
             "asset": "time_out.mp3", 
             "target": "time_out.mp3"
+        }, 
+        {
+            "asset": "install/group.plist", 
+            "target": "group.plist"
         }, 
         {
             "asset": "click_touch.mp3", 
@@ -75,6 +79,10 @@
         {
             "asset": "you_win.mp3", 
             "target": "you_win.mp3"
+        }, 
+        {
+            "asset": "Source/Resources/Default-Landscape@2x~ipad.png", 
+            "target": "Default-Landscape@2x~ipad.png"
         }, 
         {
             "asset": "Source/Resources/Default-Landscape~ipad.png", 
@@ -117,17 +125,13 @@
             "target": "Default.png"
         }, 
         {
-            "asset": "install/group.plist", 
-            "target": "group.plist"
-        }, 
-        {
             "asset": "Source/Resources/Icons/iPad-old.png", 
             "target": "iPad-old.png"
         }
     ], 
     "config": {
         "APPLICATION_FULL_NAME": "quiz", 
-        "APPLICATION_IDENTIFIER": "com.earlystart.quiz", 
+        "APPLICATION_IDENTIFIER": "com.earlystart.ios.englishvocabularyquiz", 
         "APPLICATION_NAME": "quiz", 
         "LONG_VERSION": "1.0", 
         "SHORT_VERSION": "1.0", 
@@ -221,6 +225,11 @@
                     "prefix": "Source/", 
                     "suffix": "AppDelegate.h"
                 }, 
+                "AppItem.h": {
+                    "key": "AppItem.h", 
+                    "prefix": "moreapp/", 
+                    "suffix": "AppItem.h"
+                }, 
                 "BaseNode.h": {
                     "key": "BaseNode.h", 
                     "prefix": "./", 
@@ -230,6 +239,11 @@
                     "key": "CustomButton.h", 
                     "prefix": "./", 
                     "suffix": "CustomButton.h"
+                }, 
+                "EarlyStartMoreApp.h": {
+                    "key": "EarlyStartMoreApp.h", 
+                    "prefix": "moreapp/", 
+                    "suffix": "EarlyStartMoreApp.h"
                 }, 
                 "GADAdMobExtras.h": {
                     "key": "GADAdMobExtras.h", 
@@ -400,7 +414,7 @@
             "type": "iquote"
         }, 
         {
-            "header_path": "/tmp/tmp_Emjfz/BUILT_PRODUCTS_DIR/include", 
+            "header_path": "/tmp/tmp3rO6uy/BUILT_PRODUCTS_DIR/include", 
             "type": "I"
         }, 
         {
@@ -468,11 +482,11 @@
             "type": "I"
         }, 
         {
-            "header_path": "/tmp/tmp_Emjfz/DERIVED_FILE_DIR/armv7", 
+            "header_path": "/tmp/tmp3rO6uy/DERIVED_FILE_DIR/armv7", 
             "type": "I"
         }, 
         {
-            "header_path": "/tmp/tmp_Emjfz/DERIVED_FILE_DIR", 
+            "header_path": "/tmp/tmp3rO6uy/DERIVED_FILE_DIR", 
             "type": "I"
         }
     ], 
@@ -662,6 +676,20 @@
             "header_paths": [], 
             "language": "c", 
             "source": "ZipArchive/minizip/zip.c"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "moreapp/AppItem.m"
+        }, 
+        {
+            "defines": {}, 
+            "flags": [], 
+            "header_paths": [], 
+            "language": "objc", 
+            "source": "moreapp/EarlyStartMoreApp.m"
         }
     ], 
     "storyboards": [], 

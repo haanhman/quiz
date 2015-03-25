@@ -26,11 +26,10 @@
 #import <UIKit/UIKit.h>
 #import "cocos2d.h"
 #import <Chartboost/Chartboost.h>
-#import <Chartboost/CBNewsfeed.h>
 #import <CommonCrypto/CommonDigest.h>
 #import <AdSupport/AdSupport.h>
 
-@interface AppController : CCAppDelegate<UIApplicationDelegate, ChartboostDelegate, CBNewsfeedDelegate>
+@interface AppController : CCAppDelegate<UIApplicationDelegate, ChartboostDelegate>
 {
     
 }
@@ -44,7 +43,7 @@
 -(void)setHaveAds: (BOOL)haveads;
 
 
--(void)GoSendMail;
+-(void)GoSendMail:(int)type;
 -(void)clearDataCache;
 -(void)enableBackgroundMusic: (BOOL)bat;
 
@@ -54,5 +53,6 @@
  actionID:
  1: vao choi game
  */
+@property(nonatomic, assign)BOOL ChartboostReady;
 -(void)showChartboost: (int)actionID;
 @end

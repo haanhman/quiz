@@ -22,7 +22,7 @@
 #define df_documentsDirectory  [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
 
 #define appcontroller (AppController *)[[UIApplication sharedApplication] delegate]
-#define df_app_name @"Quiz app"
+#define df_app_name @"English vocabulary quiz"
 
 #define AppId 38
 #define NOTAMAZON 1
@@ -54,15 +54,12 @@
 
 
 #ifndef ANDROID// chu y doi appID --------------------------------------
-#define df_urlappstore @"itms-apps://itunes.apple.com/artist/early-start-co.-ltd/id930331513"
-#define df_urlrateapp @"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=942869586&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software"
+#define df_urlrateapp @"https://itunes.apple.com/app/id979797319"
 #else //---------------------------------------
 #if NOTAMAZON
-#define df_urlappstore @"https://play.google.com/store/apps/developer?id=Early+Start+CO.,LTD"
-#define df_urlrateapp @"https://play.google.com/store/apps/details?id=com.earlystart.android.dottodot.animals"
+#define df_urlrateapp @"https://play.google.com/store/apps/details?id=com.earlystart.android.englishvocabularyquiz"
 #else
-#define df_urlrateapp @"amzn://apps/android?p=com.earlystart.android.dottodot.animals"
-#define df_urlappstore @"amzn://apps/android?p=com.earlystart.android.dottodot.animals&showAll=1"
+#define df_urlrateapp @"amzn://apps/android?p=com.earlystart.android.englishvocabularyquiz"
 #endif
 #endif
 

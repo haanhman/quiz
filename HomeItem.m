@@ -99,14 +99,16 @@
     if(un_lock == 0) {
         return;
     }
-    [appcontroller showChartboost:1];
+    
     [[OALSimpleAudio sharedInstance] playEffect:@"click_touch.mp3"];
     [appcontroller enableBackgroundMusic:NO];
     NSString *plist_data = [NSString stringWithFormat:@"%@/group_%d.plist", df_documentsDirectory, gid];
     [UserInfo getInstance].listCard = [NSArray arrayWithContentsOfFile:plist_data];
     [UserInfo getInstance].gid = gid;
     [UserInfo getInstance].dictGroup = self.dict;
-    [UserInfo getInstance].isFinish = NO;        
+    [UserInfo getInstance].isFinish = NO;
+    
+    [appcontroller showChartboost:1];
 }
 
 @end

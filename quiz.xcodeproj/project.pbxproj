@@ -32,6 +32,7 @@
 		3523B80D1AA0768300449CAF /* bg_music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3523B80C1AA0768300449CAF /* bg_music.mp3 */; };
 		3523B80F1AA07AEC00449CAF /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3523B80E1AA07AEC00449CAF /* Chartboost.framework */; };
 		3523B8231AA07C7600449CAF /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3523B8221AA07C7600449CAF /* libGoogleAdMobAds.a */; };
+		35346A841AC26A7D00546FEC /* install_android.zip in Resources */ = {isa = PBXBuildFile; fileRef = 35346A831AC26A7D00546FEC /* install_android.zip */; };
 		353A94CF1A9D680300B60296 /* database.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 353A94CE1A9D680300B60296 /* database.sqlite */; };
 		353A94D61A9D690100B60296 /* WMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A94D51A9D690100B60296 /* WMDatabase.m */; };
 		353A94DE1A9D6D3100B60296 /* GroupModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 353A94DC1A9D6D3100B60296 /* GroupModel.m */; };
@@ -56,12 +57,12 @@
 		359ED0E21AA159920033D534 /* lose_time.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 359ED0E11AA159920033D534 /* lose_time.mp3 */; };
 		359ED0F11AA181430033D534 /* AndroidManifest.xml in Resources */ = {isa = PBXBuildFile; fileRef = 359ED0EF1AA181430033D534 /* AndroidManifest.xml */; };
 		35A1CAF01AAD3EAD002F20A8 /* QuangCao.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A1CAEF1AAD3EAD002F20A8 /* QuangCao.m */; };
+		35AD964D1AC24C2D0096792E /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 35AD964B1AC24C2D0096792E /* Default-Landscape@2x~ipad.png */; };
+		35AD964E1AC24C2D0096792E /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 35AD964C1AC24C2D0096792E /* Default~ipad.png */; };
 		35B5160C1A9C0E5400CA80DC /* HomeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B5160B1A9C0E5400CA80DC /* HomeItem.m */; };
 		35BB402A1AC185D50099D3B4 /* EarlyStartMoreApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BB40271AC185D50099D3B4 /* EarlyStartMoreApp.m */; };
 		35BB402B1AC185D50099D3B4 /* AppItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BB40281AC185D50099D3B4 /* AppItem.m */; };
 		35BB402D1AC1882C0099D3B4 /* group.plist in Resources */ = {isa = PBXBuildFile; fileRef = 35BB402C1AC1882C0099D3B4 /* group.plist */; };
-		35BB40301AC188DE0099D3B4 /* install_android.zip in Resources */ = {isa = PBXBuildFile; fileRef = 35BB402E1AC188DE0099D3B4 /* install_android.zip */; };
-		35BB40311AC188DE0099D3B4 /* install_ios.zip in Resources */ = {isa = PBXBuildFile; fileRef = 35BB402F1AC188DE0099D3B4 /* install_ios.zip */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
 		B71F5913188484E7003F4D28 /* iPad.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5909188484E7003F4D28 /* iPad.png */; };
@@ -137,6 +138,7 @@
 		3523B82E1AA07E5300449CAF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		3523B8301AA07EBF00449CAF /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		3523B8321AA07EDD00449CAF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		35346A831AC26A7D00546FEC /* install_android.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = install_android.zip; sourceTree = "<group>"; };
 		353A94CE1A9D680300B60296 /* database.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = database.sqlite; sourceTree = "<group>"; };
 		353A94D41A9D690100B60296 /* WMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMDatabase.h; sourceTree = "<group>"; };
 		353A94D51A9D690100B60296 /* WMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMDatabase.m; sourceTree = "<group>"; };
@@ -177,6 +179,8 @@
 		359ED0EF1AA181430033D534 /* AndroidManifest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = AndroidManifest.xml; sourceTree = "<group>"; };
 		35A1CAEE1AAD3EAD002F20A8 /* QuangCao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuangCao.h; sourceTree = "<group>"; };
 		35A1CAEF1AAD3EAD002F20A8 /* QuangCao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuangCao.m; sourceTree = "<group>"; };
+		35AD964B1AC24C2D0096792E /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		35AD964C1AC24C2D0096792E /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
 		35B5160A1A9C0E5400CA80DC /* HomeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeItem.h; sourceTree = "<group>"; };
 		35B5160B1A9C0E5400CA80DC /* HomeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeItem.m; sourceTree = "<group>"; };
 		35BB40261AC185D50099D3B4 /* AppItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppItem.h; sourceTree = "<group>"; };
@@ -184,8 +188,6 @@
 		35BB40281AC185D50099D3B4 /* AppItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppItem.m; sourceTree = "<group>"; };
 		35BB40291AC185D50099D3B4 /* EarlyStartMoreApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarlyStartMoreApp.h; sourceTree = "<group>"; };
 		35BB402C1AC1882C0099D3B4 /* group.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = group.plist; sourceTree = "<group>"; };
-		35BB402E1AC188DE0099D3B4 /* install_android.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = install_android.zip; sourceTree = "<group>"; };
-		35BB402F1AC188DE0099D3B4 /* install_ios.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = install_ios.zip; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -404,12 +406,24 @@
 			path = libs;
 			sourceTree = "<group>";
 		};
+		35AD96491AC24C180096792E /* manhinh */ = {
+			isa = PBXGroup;
+			children = (
+				35AD964B1AC24C2D0096792E /* Default-Landscape@2x~ipad.png */,
+				35AD964C1AC24C2D0096792E /* Default~ipad.png */,
+				B737896B180762440076A88C /* Default-568h@2x.png */,
+				B737896C180762440076A88C /* Default-Landscape~ipad.png */,
+				B737896D180762440076A88C /* Default.png */,
+				B737896E180762440076A88C /* Default@2x.png */,
+			);
+			name = manhinh;
+			sourceTree = "<group>";
+		};
 		35C73F141A9C6D5300B67D56 /* install */ = {
 			isa = PBXGroup;
 			children = (
+				35346A831AC26A7D00546FEC /* install_android.zip */,
 				35BB402C1AC1882C0099D3B4 /* group.plist */,
-				35BB402E1AC188DE0099D3B4 /* install_android.zip */,
-				35BB402F1AC188DE0099D3B4 /* install_ios.zip */,
 				353A94CE1A9D680300B60296 /* database.sqlite */,
 			);
 			path = install;
@@ -461,10 +475,6 @@
 				B71F590E188484E7003F4D28 /* iPhone@2x.png */,
 				B71F590F188484E7003F4D28 /* Settings.png */,
 				B71F5910188484E7003F4D28 /* Settings@2x.png */,
-				B737896B180762440076A88C /* Default-568h@2x.png */,
-				B737896C180762440076A88C /* Default-Landscape~ipad.png */,
-				B737896D180762440076A88C /* Default.png */,
-				B737896E180762440076A88C /* Default@2x.png */,
 			);
 			name = Icons;
 			sourceTree = "<group>";
@@ -529,6 +539,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				35AD96491AC24C180096792E /* manhinh */,
 				B73789911807667A0076A88C /* Icons */,
 				B737893A180761570076A88C /* Published-iOS */,
 			);
@@ -627,7 +638,7 @@
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				356E1FCC1A9B1A7700896890 /* configuration.json in Resources */,
-				35BB40301AC188DE0099D3B4 /* install_android.zip in Resources */,
+				35AD964E1AC24C2D0096792E /* Default~ipad.png in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
 				3523B80D1AA0768300449CAF /* bg_music.mp3 in Resources */,
 				359ED0DB1AA1583A0033D534 /* dung.mp3 in Resources */,
@@ -638,16 +649,17 @@
 				359ED0D91AA1583A0033D534 /* click_ingame.mp3 in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
+				35346A841AC26A7D00546FEC /* install_android.zip in Resources */,
 				359ED0E01AA1583A0033D534 /* time_out.mp3 in Resources */,
 				35BB402D1AC1882C0099D3B4 /* group.plist in Resources */,
 				359ED0DA1AA1583A0033D534 /* click_touch.mp3 in Resources */,
 				359ED0DD1AA1583A0033D534 /* lose_heart.mp3 in Resources */,
 				359ED0DC1AA1583A0033D534 /* you_win.mp3 in Resources */,
+				35AD964D1AC24C2D0096792E /* Default-Landscape@2x~ipad.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
 				359ED0DF1AA1583A0033D534 /* sai.mp3 in Resources */,
 				359ED0E21AA159920033D534 /* lose_time.mp3 in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
-				35BB40311AC188DE0099D3B4 /* install_ios.zip in Resources */,
 				350E1C721A9C2ECF00234F84 /* README.md in Resources */,
 				353A94CF1A9D680300B60296 /* database.sqlite in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
@@ -785,8 +797,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ha Anh Man (X6HSNAW82A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ha Anh Man (X6HSNAW82A)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -816,7 +828,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = quiz;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f48a5844-9ea4-4ee3-ab81-7a0143763feb";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -826,8 +838,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ha Anh Man (X6HSNAW82A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ha Anh Man (X6HSNAW82A)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -855,7 +867,7 @@
 					"-ObjC",
 				);
 				PRODUCT_NAME = quiz;
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "f48a5844-9ea4-4ee3-ab81-7a0143763feb";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

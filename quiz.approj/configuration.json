@@ -191,7 +191,7 @@
         // CAU HINH 2
         
         // cho google play.
-        "deps": ["Chartboost","sqlite", "GLKit","StoreKit", "AdMob"],
+        "deps": ["Chartboost","sqlite", "GLKit","AdMob"],
         
         
         //cho amazon
