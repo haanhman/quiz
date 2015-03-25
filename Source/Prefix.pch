@@ -1,0 +1,92 @@
+//
+// Prefix header for all source files of the 'Test' target in the 'Test' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iPhone SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "cocos2d.h"
+#import "cocos2d-ui.h"
+#import "CCBuilderReader.h"
+#import "AppDelegate.h"
+#import "BaseNode.h"
+#import "UserInfo.h"
+#import "CustomButton.h"
+
+#define df_documentsDirectory  [NSHomeDirectory() stringByAppendingPathComponent:@"Documents"]
+
+#define appcontroller (AppController *)[[UIApplication sharedApplication] delegate]
+#define df_app_name @"Quiz app"
+
+#define AppId 38
+#define NOTAMAZON 1
+
+//admob
+//#warning nho thay doi id quang cao
+#define df_idFulScreen @"ca-app-pub-5765744429336993/2452539266"
+#define df_idQuangCao @"ca-app-pub-5765744429336993/3400038866"
+
+//chartboots
+#if ANDROID
+#if NOTAMAZON
+//google
+#define CHARTBOOST_APP_ID @"54ffbc3804b016515affc014"
+#define CHARTBOOST_APP_SIGNATURE @"b8a7a3f66c20f9c1c2beab77d14b5530eee9c718"
+#else
+//amazone
+#define CHARTBOOST_APP_ID @"54ffbc6b0d602518c9a87bf8"
+#define CHARTBOOST_APP_SIGNATURE @"125eaa5e8c24801c04c3a1aef76b24ff483b30ec"
+#endif
+#else
+//ios
+#define CHARTBOOST_APP_ID @"54ffbbc804b01651519dafe6"
+#define CHARTBOOST_APP_SIGNATURE @"486114cda6850319ff7010bd4cc263019413a524"
+#endif
+
+#define df_moreapp_url @"http://behocchu.com/global/service/moreapp?version=%d&os=%@"
+#define df_subscriptions @"http://www.monkeyjunior.com/subscriptions"
+
+
+#ifndef ANDROID// chu y doi appID --------------------------------------
+#define df_urlappstore @"itms-apps://itunes.apple.com/artist/early-start-co.-ltd/id930331513"
+#define df_urlrateapp @"itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=942869586&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software"
+#else //---------------------------------------
+#if NOTAMAZON
+#define df_urlappstore @"https://play.google.com/store/apps/developer?id=Early+Start+CO.,LTD"
+#define df_urlrateapp @"https://play.google.com/store/apps/details?id=com.earlystart.android.dottodot.animals"
+#else
+#define df_urlrateapp @"amzn://apps/android?p=com.earlystart.android.dottodot.animals"
+#define df_urlappstore @"amzn://apps/android?p=com.earlystart.android.dottodot.animals&showAll=1"
+#endif
+#endif
+
+#if ANDROID
+#define df_install_file @"install_android.zip"
+#define df_download_url @"http://behocchu.com/quiz/service/download/?gid=%d&os=android"
+#else
+#define df_install_file @"install_ios.zip"
+#define df_download_url @"http://behocchu.com/quiz/service/download/?gid=%d&os=ios"
+#endif
+
+#define df_group_default 5
+#define df_update_url @"http://behocchu.com/quiz/service/index?lang_id=1"
+#define df_update_time 3600
+
+
+
+
+
+NSUserDefaults *user_default;
+NSString *device_type;
+
+static inline NSString * fullpath(NSString *strpath){
+    return [[NSBundle mainBundle] pathForResource:strpath ofType:nil];
+}
+
+#endif
